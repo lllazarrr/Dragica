@@ -1,0 +1,140 @@
+
+body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+h1 {
+  margin: 20px;
+}
+
+.srecan-rodjendan {
+  flex-grow: 1;
+  flex-basis: auto;
+  display: table;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  padding: 0% 4%;
+  font-size: 200%;
+  line-height: 1.5;
+  color: #1a1515;
+  background-color: #ff9191;
+}
+
+.vertical-center {
+  display: table-cell;
+  vertical-align: middle;
+  align-content: center;
+}
+
+.poruka {
+  flex-grow: 1;
+  flex-basis: auto;
+  display: table;
+  background-color: #ffd4d4;
+  padding: 30px;
+  text-align: center;
+  font-family: 'Arizonia', cursive;
+  color: #1a1515;
+}
+
+
+.grid {
+  display: table-cell;
+  vertical-align: middle;
+  display: grid;
+  padding: 10% 0;
+  vertical-align: middle;
+  justify-items: center;
+  grid-template-areas:
+    ".  V  .  E  GG  .  G "
+    "D  .  S  .  .  P  . "
+    ".  K  .  .  O  .  . "
+    ".  .  .  C  .  LJ  . "
+    "N  .  J  .  L  .  T "
+    ".  A  .  B  .  Š  . "
+    ".  .  .  .  .  .  EE "
+    ".  .  Y  .  NN  .  . ";
+}
+
+.grid::before {
+  border: 7px solid #ffd4d4;
+  content: ' ';
+  grid-column: 2 / 7;
+  grid-row: 2 / 7;
+  width: 100%;
+}
+
+/* ------------------------------- */
+span:nth-child(1) {
+  grid-area: V;
+}
+span:nth-child(2) {
+  grid-area: S;
+}
+span:nth-child(3) {
+  grid-area: E;
+}
+/* ------------------------------- */
+span:nth-child(4) {
+  grid-area: N;
+}
+span:nth-child(5) {
+  grid-area: A;
+}
+span:nth-child(6) {
+  grid-area: J;
+}
+span:nth-child(7) {
+  grid-area: B;
+}
+span:nth-child(8) {
+  grid-area: O;
+}
+span:nth-child(9) {
+  grid-area: LJ;
+}
+span:nth-child(10) {
+  grid-area: Š;
+}
+span:nth-child(11) {
+  grid-area: EE;
+}
+/* ------------------------------- */
+span:nth-child(12) {
+  grid-area: C;
+}
+span:nth-child(13) {
+  grid-area: K;
+}
+span:nth-child(14) {
+  grid-area: G;
+}
+/* ------------------------------- */
+span:nth-child(15) {
+  grid-area: Y;
+}
+span:nth-child(16) {
+  grid-area: NN;
+}
+/* ------------------------------- */
+span:nth-child(17) {
+  grid-area: P;
+}
+span:nth-child(18) {
+    grid-area: T;
+}
+span:nth-child(19) {
+    grid-area: L;
+}
+
+span:nth-child(20) {
+    grid-area: D;
+}
+
+span:nth-child(21) {
+    grid-area: GG;
+}
